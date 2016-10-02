@@ -11,9 +11,31 @@ knitr::opts_chunk$set(echo = TRUE)
 
 "If confusion is the first step to knowledge, I must be a genius." – Larry Leissner
 
-
-
 ## Table of Contents
+  1. Project Overview
+  2. Results
+    + bullet point your steps
+    + load a file from internet
+    + use 3 different R functions (e.g., plot, cor, pairs, etc.)
+  3. Summmarize the Results  
+  4. About the Author
+  
+## Project Overview
+Although not stated explicitly, the goal of this first project was to learn enough R markdown to present project results in a professional manner while also taking the first steps to developing an R project.  This included downloading and accessing data files in various formats and then displaying a few descriptive statics.
+  
+Specifically, we were charged with:
+
+  * creating a markdown file and bullet point the steps
+  * downloading a file from internet 
+  * using 3 different R functions (e.g., plot, cor, pairs, etc.)
+  * briefly summarizing the observations
+  * finding an R data set
+  * doing three different visuals on the set (barplot, boxplot, etc.)
+  * finding a graph, image or grapicfile to insert into the markdown
+  * inserting 3 references (links)
+  * additionally, I set up an "R publish" account and uploaded this markdown file
+    
+The work product is this file itself.
 
 ### Input, Output Commands
   read.table, read.csv
@@ -30,17 +52,8 @@ knitr::opts_chunk$set(echo = TRUE)
   getwd()  -get working directory
   setwd()  -set working directory
   
-## To Do
-  set up publish account and upload this markdown file
-  create a markdown with (1) bullet point your steps (2) load a file from internet, 
-  (3) use 3 different R functions (e.g., plot, cor, pairs, etc.)
-  (4) summarize the observations (brief)
-  (5) find an R data set
-  (6) do three different visuals on the set (barplot, boxplot, etc)
-  (7) find a graph, image or grapicfile to insert into the markdown
-  (8) insert 3 references (links)
-  
 ## R Markdown
+
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -57,8 +70,11 @@ You can also embed plots, for example:
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
+## Summary
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
+***
+## About the Author
 Sam Skinner: ![](Yours_Truly.JPG)
+Skinner is a rambling rube in R-land, hoping to hitch a ride with fellow travelers through the R-landscape.
+A Leissner "landscape": ![](Leissner.jpg)
 [Leissner, 2016](http://www.expressnews.com/entertainment/arts-culture/article/S-A-artist-gets-lost-in-abstract-landscapes-6421850.php#photo-8406700)

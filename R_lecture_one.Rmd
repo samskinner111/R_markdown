@@ -8,10 +8,18 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+<div style="width:700px; height:300px">
+<div style="float:left; width:200px; height=200px; title='A Leissner landscape, 2016.'">
+  ![](leissner.jpg)
+</div>
+<div style="float: right; margin-top: 100px; width:400px; height=100px;">
+  <h4>"If confusion is the first step to knowledge, I must be a genius." – [Larry Leissner](http://www.expressnews.com/entertainment/arts-culture/article/S-A-artist-gets-lost-in-abstract-landscapes-6421850.php#photo-8406700), painter</h4>
+</div>
+</div>
+<p style="clear: both;">
 
-"If confusion is the first step to knowledge, I must be a genius." – Larry Leissner
 
-## Table of Contents
+### Table of Contents
   1. Project Overview
   2. Results
     + bullet point your steps
@@ -19,9 +27,10 @@ knitr::opts_chunk$set(echo = TRUE)
     + use 3 different R functions (e.g., plot, cor, pairs, etc.)
   3. Summmarize the Results  
   4. About the Author
+ 
   
-## Project Overview
-Although not stated explicitly, the goal of this first project was to learn enough R markdown to present project results in a professional manner while also taking the first steps to developing an R project.  This included downloading and accessing data files in various formats and then displaying a few descriptive statics.
+### Project Overview
+Although not stated explicitly, the goal of this first project was to learn enough R markdown to present project results in a professional manner while also taking the first steps to developing an R-based project.  This included downloading and accessing data files in various formats and then displaying a few descriptive statistics.
   
 Specifically, we were charged with:
 
@@ -70,11 +79,24 @@ You can also embed plots, for example:
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
-## Summary
+### Summary
 
 ***
-## About the Author
-Sam Skinner: ![](Yours_Truly.JPG)
-Skinner is a rambling rube in R-land, hoping to hitch a ride with fellow travelers through the R-landscape.
-A Leissner "landscape": ![](Leissner.jpg)
-[Leissner, 2016](http://www.expressnews.com/entertainment/arts-culture/article/S-A-artist-gets-lost-in-abstract-landscapes-6421850.php#photo-8406700)
+### About the Author
+
+
+<div style="width:840px; height:300px">
+<div style="float:left; width:200px; height=200px; padding-right:20px;">
+  ![](Yours_Truly.JPG)
+  [Sam Skinner](https://www.linkedin.com/in/samskinnerphd)
+</div>
+
+<div style="float:left; margin-top:25px; width:400px; height:105px;">
+  <h5>Skinner is a rambling rube in R-land, hoping to hitch a ride with fellow travelers through the R-landscape.</h5>
+</div>
+
+<div style="float:right; width:200px; height=180px; padding-left:10px;">
+  ![](white_shaman.jpg)
+</div>
+</div>
+<br><br>

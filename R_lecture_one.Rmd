@@ -1,0 +1,64 @@
+---
+title: "A Hitchhiker's Guide to R"
+author: "Sam Skinner"
+date: "10/1/2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+"If confusion is the first step to knowledge, I must be a genius." – Larry Leissner
+
+
+
+## Table of Contents
+
+### Input, Output Commands
+  read.table, read.csv
+  source, dump
+  dget, dput
+  readLines, Writelines
+  save
+  serialize
+
+### Getting Help
+  ?help(method)
+  demo(data.table)
+  
+  getwd()  -get working directory
+  setwd()  -set working directory
+  
+## To Do
+  set up publish account and upload this markdown file
+  create a markdown with (1) bullet point your steps (2) load a file from internet, 
+  (3) use 3 different R functions (e.g., plot, cor, pairs, etc.)
+  (4) summarize the observations (brief)
+  (5) find an R data set
+  (6) do three different visuals on the set (barplot, boxplot, etc)
+  (7) find a graph, image or grapicfile to insert into the markdown
+  (8) insert 3 references (links)
+  
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Sam Skinner: ![](Yours_Truly.JPG)
+[Leissner, 2016](http://www.expressnews.com/entertainment/arts-culture/article/S-A-artist-gets-lost-in-abstract-landscapes-6421850.php#photo-8406700)

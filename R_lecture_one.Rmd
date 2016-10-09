@@ -20,13 +20,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ### Table of Contents
-  1. Project Overview
-  2. Results
-    + bullet point your steps
-    + load a file from internet
-    + use 3 different R functions (e.g., plot, cor, pairs, etc.)
-  3. Summmarize the Results  
-  4. About the Author
+1. Project Overview
+2. Results
+  + bullet point your steps (this section!)
+  + load a file from internet
+  * CSV files
+  * XML files
+  * Postgres files
+  + use 3 different R functions (e.g., plot, cor, pairs, etc.)
+3. Summmary  
+4. About the Author
  
   
 ### Project Overview
@@ -47,56 +50,82 @@ Specifically, we were charged with:
 The work product is this file itself.
 
 ### Input, Output Commands
-  read.table, read.csv
+1. Retrieving Files from the Internet
+
+  There are a variety of commands to allow downloading of files from the internet.  If the data file is accessible directly, one can use the following sequence:
+  
+  fileURL <- 
+
+```{r }
+system('curl -o data.csv https://data.maryland.gov/api/views/ag7x-nwtv/rows.csv?accessType=DOWNLOAD')
+system('mv data.csv housing_data.csv')
+```
+
+2. Reading files
++ CSV files,  read.csv
++ XML files
++ Postgres data, read.table,
   source, dump
   dget, dput
   readLines, Writelines
   save
   serialize
 
-### Getting Help
-  ?help(method)
-  demo(data.table)
+### Miscellaneous Commands
+?help(method)
+
+demo(data.table)
   
-  getwd()  -get working directory
-  setwd()  -set working directory
-  
-## R Markdown
+getwd()  -get working directory
 
+setwd()  -set working directory
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+<http://rmarkdown.rstudio.com>
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+### Summarize an R dataset
 
-```{r cars}
-summary(cars)
+```{r airquality}
+dim(airquality)
+
+head(airquality, 3)
+
+summary(airquality)
 ```
 
 ## Including Plots
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r }
+pairs(airquality)
 ```
+
+```{r }
+ozone <- airquality$Ozone
+temp <- airquality$Temp 
+plot(temp, ozone)
+```
+
+
 ### Summary
 
 ***
+***
 ### About the Author
 
-
-<div style="width:840px; height:300px">
+<br>
+<div style="width:840px; height:210px">
 <div style="float:left; width:200px; height=200px; padding-right:20px;">
   ![](Yours_Truly.JPG)
-  [Sam Skinner](https://www.linkedin.com/in/samskinnerphd)
 </div>
 
 <div style="float:left; margin-top:25px; width:400px; height:105px;">
-  <h5>Skinner is a rambling rube in R-land, hoping to hitch a ride with fellow travelers through the R-landscape.</h5>
+  <h5>[Sam Skinner](https://www.linkedin.com/in/samskinnerphd) is a rambling rube in R-land, hoping to hitch a ride with fellow travelers through the R-landscape.</h5>
 </div>
 
 <div style="float:right; width:200px; height=180px; padding-left:10px;">
   ![](white_shaman.jpg)
 </div>
 </div>
+<footer>&copy; Sam Skinner, 2016. </footer>
 <br><br>
